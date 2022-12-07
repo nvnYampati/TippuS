@@ -1,0 +1,21 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    This is my Firt LWC on record {recordId}
+    <lightning-input type="text" label="Enter some text" onchange={searchEntered} value={enteredValue}></lightning-input>
+    <lightning-button label='Click Me!!' title="Toggle content action"
+                        onclick={buttonClicked}>
+                    </lightning-button>
+
+                   <!-- <template for:each={accountsResponseList} for:item="accountToDisplay">
+                        {accountToDisplay.Name}
+                    </template>-->
+
+    <lightning-datatable
+    data={accountsResponseList}
+    columns={columns}
+    key-field="id"
+    onrowselection={getSelectedRow}
+    onrowaction={handleRowAction}
+    >
+    </lightning-datatable>
+</template>
